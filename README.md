@@ -33,14 +33,14 @@ A program célja, hogy érthetően, átláthatóan megjelenítse a felhasználó
 **Vendég**: Csak a publikus oldalakat éri el:
 *	Főoldal
 *	Bejelentkezés
-![](\docs\images\login.png)
+![](/docs/images/login.png)
 *	Regisztráció
 
 **Bejelentkezett felhasználó**: A publikus oldalak elérésén felül egyéb funkciókhoz is hozzáfér.
 *	Új esemény felvétele
 *	Meglévő esemény megtekintése, szerkesztése, törlése
 *	Új helyszín felvétele
-![](\docs\images\event.png)
+![](/docs/images/event.png)
 *	Meglévő helyszín megtekintése, szerkesztése, törlése
 * Jelentkezés rendezvényre
 *	Komment írása
@@ -93,39 +93,53 @@ A program célja, hogy érthetően, átláthatóan megjelenítse a felhasználó
 
 ####2.3 Felhasználói-felület modell
 #####2.3.1 Oldalvázlatok
+
 **Főoldal**
-![](\docs\images\mockup\index.png)
+![](/docs/images/mockup/index.png)
+
 **Bejelentkező oldal**
-![](\docs\images\mockup\login.png)
+![](/docs/images/mockup/login.png)
+
 **Regisztrációs oldal**
-![](\docs\images\mockup\signin.png)
+![](/docs/images/mockup/signin.png)
+
 **Esemény felvétele**
-![](\docs\images\mockup\events_new.png)
+![](/docs/images/mockup/events_new.png)
+
 **Helyszín felvétele**
-![](\docs\images\mockup\loc_new.png)
+![](/docs/images/mockup/loc_new.png)
+
 **Esemény listaoldal**
-![](\docs\images\mockup\events_list.png)
+![](/docs/images/mockup/events_list.png)
+
 **Helyszín listaoldal**
-![](\docs\images\mockup\locs.png)
+![](/docs/images/mockup/locs.png)
+
 **Esemény megtekintése**
-![](\docs\images\mockup\events_details.png)
+![](/docs/images/mockup/events_details.png)
 
 #####2.3.1 Designtervek
 **Főoldal**
-![](\docs\images\design\index.png)
+![](/docs/images/design/index.png)
+
 **Bejelentkező oldal**
-![](\docs\images\design\login.png)
+![](/docs/images/design/login.png)
+
 **Regisztrációs oldal**
-![](\docs\images\design\signin.png)
+![](/docs/images/design/signin.png)
+
 **Esemény felvétele**
-![](\docs\images\design\events_new.png)
+![](/docs/images/design/events_new.png)
+
 **Esemény listaoldal**
-![](\docs\images\design\events_list.png)
+![](/docs/images/design/events_list.png)
+
 **Helyszín listaoldal**
-![](\docs\images\design\locs_list.png)
+![](/docs/images/design/locs_list.png)
+
 **Esemény megtekintése**
-![](\docs\images\design\events_details.png)
+![](/docs/images/design/events_details.png)
 
 ###2.4 Felhasználói-felület modell
 ####2.4.1 Adatmodell és adatbázisterv
-![](\docs\images\db.png)
+![](/docs/images/db.png)

@@ -1,0 +1,305 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"be",
+				"beker_vendeg"
+			],
+			[
+				"re",
+				"rend_id"
+			],
+			[
+				"rend",
+				"rend_id"
+			],
+			[
+				"ve",
+				"vendegek"
+			],
+			[
+				"beol",
+				"beolvas_vendeg"
+			],
+			[
+				"kii",
+				"kiir_vendeg"
+			],
+			[
+				"ven",
+				"vendegek_szama"
+			],
+			[
+				"j",
+				"j_ido"
+			],
+			[
+				"r",
+				"rend_id"
+			],
+			[
+				"V",
+				"VEND_FORMAT"
+			],
+			[
+				"RE",
+				"REND_FILE"
+			],
+			[
+				"REN",
+				"rendezvenyek"
+			],
+			[
+				"ren",
+				"rendezvenyek_szama"
+			],
+			[
+				"n",
+				"nev"
+			],
+			[
+				"ma",
+				"MAX_SIZE"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/welcome.njk",
+			"settings":
+			{
+				"buffer_size": 229,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"synt ht",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 186.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Commands",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/migrations",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/seeds",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views"
+	],
+	"file_history":
+	[
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/kameleon.sublime-project",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/server.js",
+		"/C/Users/katalin.toth/AppData/Roaming/Sublime Text 3/Packages/User/untitled.sublime-build",
+		"/C/Users/katalin.toth/Desktop/gaf6rk/bead.c",
+		"/C/Users/katalin.toth/Desktop/gaf6rk/vendeg.txt",
+		"/C/Users/katalin.toth/Desktop/BEAD1/program.c",
+		"/C/Users/katalin.toth/Desktop/gaf6rk/program.c",
+		"/C/Users/katalin.toth/Documents/cpx-kuroko/00_Source/kuroko_root/globaldb_ejb_client/src/main/java/hu/areus/kuroko/globaldb/ejb/ObjectFactory.java",
+		"/C/Users/katalin.toth/Documents/GitRepo/terminus-framework/00_Source/metal-root/metal-ejb-client/src/main/java/hu/areus/metal/ejb/ObjectFactory.java",
+		"/C/Users/katalin.toth/Documents/cpx-kuroko/00_Source/kuroko_root/globaldb_ejb/src/main/resources/META-INF/weblogic-ejb-jar.xml",
+		"/C/Users/katalin.toth/Documents/cpx-kuroko/.gitignore",
+		"/C/Users/katalin.toth/Documents/cpx-kuroko/00_Source/kuroko_root/vakar_ejb/pom.xml",
+		"/C/Users/katalin.toth/Downloads/Ügyfelek_2016.08.29 09-32-10.xlsx",
+		"/C/Users/katalin.toth/Desktop/hjwrheawdsdg.txt",
+		"/C/Users/katalin.toth/Desktop/hi.html",
+		"/C/Users/katalin.toth/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"view"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/welcome.njk",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 244.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/untitled.sublime-build",
+	"project": "kameleon.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

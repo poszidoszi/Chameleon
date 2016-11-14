@@ -17,4 +17,5 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.get('/locations', 'LocationController.show')
+Route.on('/locations/create').render('locations.create')

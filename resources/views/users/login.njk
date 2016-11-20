@@ -1,0 +1,44 @@
+{% extends 'master' %}
+
+{% block content %}
+<div class="col-md-5">
+
+    {% if error %}
+        <div class="alert alert-danger" role="alert">Hiba történt a belépés során!</div>
+    {% endif %}
+
+    {{ form.open({action: 'UserController.login', class: 'form-horizontal'}) }}
+
+        {{ csrfField }}
+
+        <h2 class="form-title">Bejelentkezés</h2>
+
+        <hr>
+
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email cím:</label>
+            <div class="col-sm-9">
+                {{ form.email('email', null, {class: 'form-control'}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="col-sm-3 control-label">Jelszó:</label>
+            <div class="col-sm-9">
+                {{ form.password('password', null, {class: 'form-control'}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-4">
+                {{ form.submit('Bejelentkezés', null, {class: 'btn btn-primary'}) }}
+            </div>
+            <div class="col-sm-4">
+                <a href="/registration" class="btn btn-default">Regisztráció</a>
+            </div>
+        </div>
+
+    {{ form.close() }}
+
+</div>
+{% endblock %}

@@ -2,6 +2,7 @@
 
 const Env = use('Env')
 const Ouch = use('youch')
+const Database = use('Database')
 const Http = exports = module.exports = {}
 
 /**
@@ -12,6 +13,11 @@ const Http = exports = module.exports = {}
  * @param  {Object} response
  */
 Http.handleError = function * (error, request, response) {
+  if (error.name === 'InvalidLoginException') { 
+    return response.redirect('/login')
+  }
+
+
   /**
    * DEVELOPMENT REPORTER
    */
@@ -38,4 +44,5 @@ Http.handleError = function * (error, request, response) {
  * starting http server.
  */
 Http.onStart = function () {
+  Database.on('sql', console.log)
 }

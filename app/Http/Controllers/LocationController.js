@@ -4,26 +4,32 @@ const Location = use('App/Model/Location')
 
 class LocationController {
 
-	* show (request, response) {
-		const locations = yield Location.all()
+  * index (request, response) {
+    yield response.sendView('locations.index')
+  }
 
-		yield response.sendView('locations.list', { locations : locations.toJSON() })
-	}
+  * create (request, response) {
+    yield response.sendView('locations.create')
+  }
 
-	* create (request, response) {
+  * store (request, response) {
+    const location = new Location()
 
-		const location = new Location()
-		location.name = request.param('name')
-		location.address  = request.param('address')
-		//TODO user
+    location.name = request.input('name')
+    location.address  = request.input('address')
+    location.user_id = request.currentUser.id
 
-		yield location.save()
+    yield location.save()
 
+    response.redirect('/locations')
+  }
 
-		const locations = yield Location.all()
+  * destroy (request, response) {
+    const location = yield Location.findBy('id', request.param('id'))
+    yield location.delete()
 
-		yield response.sendView('locations.list', { locations : locations.toJSON() })
-	}
+    response.redirect('/locations')
+  }
 
 }
 

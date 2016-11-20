@@ -17,5 +17,36 @@
 
 const Route = use('Route')
 
-Route.get('/locations', 'LocationController.show')
-Route.on('/locations/create').render('locations.create')
+
+
+// ==== Authentication
+
+Route.get('/registration').render('users.registration')
+Route.post('/registration', 'UserController.register')
+
+Route.get('/login').render('users.login')
+Route.post('/login', 'UserController.login')
+
+Route.get('/logout', 'UserController.logout')
+
+// ==== Events
+
+Route.get('/').render('events.index')
+
+Route.resource('events', 'EventController')
+ .middleware({
+    auth: ['create', 'store', 'edit', 'update', 'destroy']
+ })
+
+Route.post('/events/:id/comment', 'EventController.comment')
+Route.get('/events/:id/apply', 'EventController.apply')
+  .middleware('auth')
+
+// ==== Locations
+
+Route.resource('locations', 'LocationController')
+  .except('show', 'edit', 'update')
+  .middleware('auth')
+
+// TODO: Show the user an error page
+Route.on('*').render('errors.index')

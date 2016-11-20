@@ -2,35 +2,41 @@
 
 {% block content %}
 
-<div class="row">
-    <div class="col-md-5">
+<div class="col-md-5">
 
-        <form class="form-horizontal">
-            <h2 class="form-title">Helyszín felvétele</h2>
-            <hr>
-            <div class="form-group">
-                <label for="name" class="col-sm-3 control-label">Név:</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="name" placeholder="" name="name">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="address" class="col-sm-3 control-label">Cím:</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="address" placeholder="" name="address">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-3">
-                    <button type="submit" class="btn btn-success">Mentés</button>
-                </div>
+    <form action="/locations" method="POST" class="form-horizontal">
 
-                <div class="col-sm-3">
-                    <a class="btn btn-default" href="/locations">Mégsem</a>
-                </div>
-            </div>
-        </form>
+        {{ csrfField }}
 
-    </div>
+        <h2 class="form-title">Helyszín felvétele</h2>
+
+        <hr>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Név:</label>
+            <div class="col-sm-9">
+                {{ form.text('name', null, {class: 'form-control'}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address" class="col-sm-3 control-label">Cím:</label>
+            <div class="col-sm-9">
+                {{ form.text('address', null, {class: 'form-control'}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-3">
+                {{ form.submit('Mentés', null, {class: 'btn btn-primary'}) }}
+            </div>
+
+            <div class="col-sm-3">
+                <a class="btn btn-default" href="/locations">Mégsem</a>
+            </div>
+        </div>
+
+    </form>
+
 </div>
 {% endblock %}

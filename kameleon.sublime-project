@@ -8,7 +8,14 @@
 				".svn", 
 				".git", 
 				".hg", 
-				"CVS"
+				"CVS",
+				"docs"
+			],
+			"file_exclude_patterns": [
+				".editorconfig",
+				".gitignore",
+				"CHANGELOG*",
+				"README*"
 			],
 			"path": "."
 		}

@@ -143,3 +143,54 @@ A program célja, hogy érthetően, átláthatóan megjelenítse a felhasználó
 ###2.4 Felhasználói-felület modell
 ####2.4.1 Adatmodell és adatbázisterv
 ![](/docs/images/db.png)
+
+###3. Implementáció
+####3.1 Felkhasznált technológiák
+- Git, Github
+- NodeJs, AdonisJs
+- Bootstrap
+- Sublime Text
+
+####3.2 Könyvtárstruktúra
+
+* **Chameleon_gaf6rk**
+  * **app**
+    * **Http**
+      * **controllers**
+        * _EventController.js_
+        * _LocationController.js_
+        * _UserController.js_
+      * _kernel.js_
+      * _routes.js_
+    * **Model**
+      * _Comment.js_
+      * _Event.js_
+      * _Location.js_
+      * _Token.js_
+      * _User.js_
+  * **config**
+    * _app.js_
+    * _auth.js_
+    * _bodyParser.js_
+    * _cors.js_
+    * _databse.js_
+    * _event.js_
+    * _session.js_
+    * _shield.js_
+  * **database**
+  * **resources/views**
+    * **events**
+      * _create.njk_
+      * _details.njk_
+      * _index.njk_
+    * **locations**
+      * _create.njk_
+      * _index.njk_
+      * _list.hbs_
+    * **users**
+      * _login.njk_
+      * _registration.njk_
+    * _master.hbs_
+    * _welcome.hbs_
+  * _package.json_
+  * _server.js_

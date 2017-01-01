@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"pass",
+				"passwordSuccess"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"use",
+				"user"
+			],
+			[
 				"location",
 				"Location"
 			],
@@ -14,10 +42,6 @@
 			[
 				"be",
 				"beker_vendeg"
-			],
-			[
-				"re",
-				"rend_id"
 			],
 			[
 				"rend",
@@ -76,56 +100,30 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/locations/list.njk",
-			"settings":
-			{
-				"buffer_size": 1069,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/views/master.njk",
-			"settings":
-			{
-				"buffer_size": 1097,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/locations/create.njk",
-			"settings":
-			{
-				"buffer_size": 1207,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/Http/routes.js",
 			"settings":
 			{
-				"buffer_size": 621,
+				"buffer_size": 1462,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/LocationController.js",
+			"file": "app/Http/Controllers/UserController.js",
 			"settings":
 			{
-				"buffer_size": 602,
+				"buffer_size": 1882,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/EventController.js",
+			"file": "resources/views/users/profile.njk",
 			"settings":
 			{
-				"buffer_size": 75,
-				"line_ending": "Unix"
+				"buffer_size": 3938,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -183,20 +181,23 @@
 	"expanded_folders":
 	[
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http/Controllers",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Model",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/migrations",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/public",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/public/assets",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/locations"
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/events",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/locations",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/users"
 	],
 	"file_history":
 	[
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/users/profile.njk",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/kameleon.sublime-project",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/locations/list.njk",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/master.njk",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/locations/create.njk",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http/routes.js",
+		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http/Controllers/LocationController.js",
+		"/C/Users/katalin.toth/AppData/Local/Temp/Rar$DIa0.773/osztmem.c",
+		"/C/Users/katalin.toth/Desktop/popup.xhtml",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/development.sqlite",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/login.html",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/migrations/1479133997703_location.js",
@@ -204,16 +205,11 @@
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/migrations/1479134540130_event.js",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/migrations/1479134557881_comment.js",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/database/migrations/1479135015006_user_event.js",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/master.njk",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http/routes.js",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http/Controllers/LocationController.js",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Model/Location.js",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/locations/list.njk",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/public/style.css",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/welcome.njk",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/app/Http/Controllers/HomeController.js",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/resources/views/greet.njk",
-		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/kameleon.sublime-project",
 		"/C/Users/katalin.toth/Desktop/alkfejl/kameleon/server.js",
 		"/C/Users/katalin.toth/AppData/Roaming/Sublime Text 3/Packages/User/untitled.sublime-build",
 		"/C/Users/katalin.toth/Desktop/gaf6rk/bead.c",
@@ -265,16 +261,74 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/locations/list.njk",
+					"file": "app/Http/routes.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1069,
+						"buffer_size": 1462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								909
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/UserController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1248,
+								1248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 705.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/users/profile.njk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3938,
 						"regions":
 						{
 						},
@@ -287,64 +341,6 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP-Tiwg/Syntaxes/HTML (Twig).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/master.njk",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1097,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								974,
-								974
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Tiwg/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/views/locations/create.njk",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1207,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								758,
-								758
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/PHP-Tiwg/Syntaxes/HTML (Twig).tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -353,91 +349,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/Http/routes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 621,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								619,
-								619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/Http/Controllers/LocationController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 602,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								235,
-								235
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Http/Controllers/EventController.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 75,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								38,
-								38
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

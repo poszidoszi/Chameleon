@@ -1,0 +1,111 @@
+{% extends 'master' %}
+
+{% block content %}
+
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+	{% raw %}
+
+	<div id="profile">
+
+	    <h2 class="form-title">Profilom</h2>
+		<img class="media-object" :src="'https://api.adorable.io/avatars/64/'+user.email+'.png'"  width="64" height="64">
+
+        <hr>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" :class="{ active: visibleTab == 0 }" @click="visibleTab = 0"><a role="tab">Adatok</a></li>
+            <li role="presentation" :class="{ active: visibleTab == 1 }" @click="visibleTab = 1"><a role="tab">Jelszó</a></li>
+        </ul>
+
+        <div class="alert alert-success" role="alert" v-if="editSuccess">Az adatok módosítása sikeres.</div>
+
+        <div class="clearfix" v-if="visibleTab == 0">
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">Felhasználónév:</label>
+                <div class="col-sm-9">
+                	<input type="text" name="name" class="form-control" v-model="user.username">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email cím:</label>
+                <div class="col-sm-9">
+                	<input type="email" name="email" class="form-control" v-model="user.email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname" class="col-sm-3 control-label">Vezetéknév:</label>
+                <div class="col-sm-9">
+                	<input type="text" name="lastname" class="form-control" v-model="user.lastname">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstname" class="col-sm-3 control-label">Keresztnév:</label>
+                <div class="col-sm-9">
+                	<input type="text" name="firstname" class="form-control" v-model="user.firstname">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-4">
+                	<button class="btn btn-primary" @click="submit">Módosítás</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-success" role="alert" v-if="passwordSuccess">A jelszó módosítása sikeres</div>
+
+        <div v-if="visibleTab == 1">
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Új jelszó:</label>
+                <div class="col-sm-9">
+                    <input type="password" name="password" class="form-control" v-model="user.password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-4">
+                    <button class="btn btn-primary" @click="changePassword">Módosítás</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endraw %}
+
+    <script type="text/javascript">
+    var profile = new Vue({
+        el: '#profile',
+        data: {
+            user: {{ user | json | safe }},
+            editSuccess: false,
+            passwordSuccess: false,
+            visibleTab: 0
+        },
+        methods: {
+            submit: function () {
+                submit('/profile', this.user, () => { this.editSuccess = true })
+            },
+            changePassword: function() {
+                submit('/password', this.user.password, () => { this.passwordSuccess = true })
+            }
+        }
+    })
+
+    function submit(url, data, success) {
+        $.ajax({
+            url: url,
+            method: 'POST',
+            data: JSON.stringify({
+                data: data,
+                _csrf: '{{ csrfToken }}'
+            }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: success
+        })
+    }
+    </script>
+{% endblock %}

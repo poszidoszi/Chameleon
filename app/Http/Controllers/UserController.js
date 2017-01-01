@@ -45,12 +45,50 @@ class UserController {
     return response.redirect('/events')
   }
 
-  * logout(request, response) {
+  * logout (request, response) {
     yield request.auth.logout()
 
     return response.redirect('/')
   }
 
+  * profile (request, response) {
+    const user = request.currentUser.toJSON()
+
+    delete user.password
+    yield response.sendView('users.profile', { user })
+  }
+
+  * editProfile (request, response) {
+    const u = request.input('data')
+    const user = request.currentUser
+
+    user.firstname = u.firstname
+    user.lastname = u.lastname
+    user.username = u.username
+    user.email = u.email
+
+    yield user.save()
+
+    response.ok({
+      ok: 'ok'
+    })
+  }
+
+  * setPassword (request, response) {
+    const password = request.input('data')
+    const user = request.currentUser
+    const Hash = use('Hash')
+
+    if (password) {
+      user.password = yield Hash.make(password)
+    }
+
+    yield user.save()
+
+    response.ok({
+      ok: 'ok'
+    })
+  }
 }
 
 module.exports = UserController

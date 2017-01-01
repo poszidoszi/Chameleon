@@ -29,6 +29,10 @@ Route.post('/login', 'UserController.login')
 
 Route.get('/logout', 'UserController.logout')
 
+Route.get('/profile', 'UserController.profile')
+Route.post('/profile', 'UserController.editProfile')
+Route.post('/password', 'UserController.setPassword')
+
 // ==== Events
 
 Route.get('/').render('events.index')

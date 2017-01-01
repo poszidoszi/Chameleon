@@ -194,3 +194,13 @@ A program célja, hogy érthetően, átláthatóan megjelenítse a felhasználó
     * _welcome.hbs_
   * _package.json_
   * _server.js_
+
+###4. Profiloldal
+
+A regisztrált felhasználónak lehetősége van megtekinteni a profilját és ott szerkeszteni az adatait.
+
+A megjelenő oldalon js segítségével történik a formkezelés. A formot vue.js technológiával kezeljük. A felhasználó a különböző tabokon szerkesztheti az adatait, módosíthatja jelszavát, illetve megtekintheti a saját eseményeinek listáját. A módosításokkor ajax-szal frissítjük az adatokat, illetve visszajelzünk a felhasználónak, hogy sikeres volt-e a módosítás.
+
+###4. Tesztelés
+
+Az alkalmazást funkcionálisan teszteljük a Selenium IDE segítségével.

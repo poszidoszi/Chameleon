@@ -15,6 +15,7 @@
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" :class="{ active: visibleTab == 0 }" @click="visibleTab = 0"><a role="tab">Adatok</a></li>
             <li role="presentation" :class="{ active: visibleTab == 1 }" @click="visibleTab = 1"><a role="tab">Jelszó</a></li>
+            <li role="presentation" :class="{ active: visibleTab == 2 }" @click="visibleTab = 2"><a role="tab">Eseményeim</a></li>
         </ul>
 
         <div class="alert alert-success" role="alert" v-if="editSuccess">Az adatok módosítása sikeres.</div>
@@ -72,6 +73,25 @@
             </div>
         </div>
 
+        <div v-if="visibleTab == 2">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Név</th>
+                        <th>Időpont</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="event in events" :key="event.id">
+                        <th scope="row"> {{ event.id }} </th>
+                        <td>{{ event.name }}</td>
+                        <td>{{ event.event_date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
     {% endraw %}
 
@@ -82,19 +102,23 @@
             user: {{ user | json | safe }},
             editSuccess: false,
             passwordSuccess: false,
-            visibleTab: 0
+            visibleTab: 0,
+            events: []
+        },
+        created () {
+            ajax('/myEvents', {}, (data) => { this.events = data.events })
         },
         methods: {
-            submit: function () {
-                submit('/profile', this.user, () => { this.editSuccess = true })
+            submit () {
+                ajax('/profile', this.user, () => { this.editSuccess = true })
             },
-            changePassword: function() {
-                submit('/password', this.user.password, () => { this.passwordSuccess = true })
+            changePassword () {
+                ajax('/password', this.user.password, () => { this.passwordSuccess = true })
             }
         }
     })
 
-    function submit(url, data, success) {
+    function ajax(url, data, success) {
         $.ajax({
             url: url,
             method: 'POST',

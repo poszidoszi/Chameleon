@@ -2,6 +2,7 @@
 
 const User = use('App/Model/User')
 const Hash = use('Hash')
+const Event = use('App/Model/Event')
 
 class UserController {
 
@@ -77,7 +78,6 @@ class UserController {
   * setPassword (request, response) {
     const password = request.input('data')
     const user = request.currentUser
-    const Hash = use('Hash')
 
     if (password) {
       user.password = yield Hash.make(password)
@@ -87,6 +87,16 @@ class UserController {
 
     response.ok({
       ok: 'ok'
+    })
+  }
+
+  * myEvents (request, response) {
+    const user = request.currentUser
+    const id = user.id
+
+    const events = yield Event.query().where('creator_id', id).fetch()
+    response.ok({
+      events
     })
   }
 }
